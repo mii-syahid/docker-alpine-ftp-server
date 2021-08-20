@@ -1,5 +1,5 @@
 FROM alpine:3.13
-RUN apk --no-cache add vsftpd && apk --no-cache add ftp
+RUN apk --no-cache add vsftpd && apk --no-cache add lftp
 
 COPY start_vsftpd.sh /bin/start_vsftpd.sh
 COPY vsftpd.conf /etc/vsftpd/vsftpd.conf
